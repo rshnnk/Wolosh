@@ -1,0 +1,540 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../font/Ubuntu-L.ttf");
+}
+
+
+nav {
+  ul {
+    width: 700px;
+    height: 150px;
+    margin: 0 auto;
+    list-style-type: none;
+    li {
+      display: inline-block;
+      padding: 20px;
+      a{
+        font: 15px Ubuntu;
+        text-transform: uppercase;
+        color: #9ba7b4;
+        transition: all 1s linear ;
+        padding: 20px;
+        &:hover{
+          border-bottom: solid 1px #8fc74a;
+          box-sizing: border-box;
+          color: #8fc74a;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+h2{
+  font: 50px Ubuntu;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.header-title{
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+h3{
+  font: 40px Ubuntu;
+  text-transform: uppercase;
+  color: #000;
+}
+
+p{
+  font: 16px Ubuntu;
+  color: #747474;
+}
+
+button{
+  width: 172px;
+  height: 36px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+  background-color: rgba(143,199,74,0);
+
+}
+
+
+header {
+
+  ul {
+    list-style-type: none;
+    li {
+      float: left;
+      width: 33.3333%;
+      font: 2vw Ubuntu;
+      text-transform: uppercase;
+      color: #8fc74a;
+
+
+      button{
+        border: solid 1px #8fc74a;
+        color: #8fc74a;
+        width: 50%;
+        height: 60%;
+        font-size: 1.5vw;
+        padding: 2% 0;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: all 1s ease;
+        &:hover{
+          background: green;
+          border: none;
+          color: #ffffff;
+          text-decoration: none;
+        }
+      }
+
+
+      img{
+        margin: 0 auto;
+      }
+    }
+  }
+
+  #owl-example{
+    position: relative;
+
+    .owl-item{
+      z-index: 1;
+    }
+
+    h1{
+      position: absolute;
+      z-index: 100;
+      top: 58%;
+      left: 30%;
+      font: 6vw Ubuntu;
+      font-weight: bold;
+      color: #fff;
+    }
+    button{
+      position: absolute;
+      z-index: 100;
+      top: 80%;
+      left: 44%;
+      width: 15%;
+      height: 11%;
+      -webkit-border-radius: 30px/30px 30px 29px 29px;
+      -moz-border-radius: 30px/30px 30px 29px 29px;
+      border-radius: 30px/30px 30px 29px 29px;
+      background-color: rgba(143,199,74,0);
+      border: solid 2px #ffffff;
+      font: 3vw Ubuntu;
+      font-weight: bold;
+      color: #ffffff;
+      transition: all 1s ease;
+      &:hover{
+        background: #ffffff;
+        color: #101010;
+      }
+    }
+  }
+
+}
+
+
+.about{
+  background: url("../images/about.png") no-repeat;
+  background-size: cover;
+  min-height: 575px;
+
+  h2{
+    margin: 60px 0 50px 0;
+    color: #fff;
+  }
+  p{
+    width: 90%;
+    margin: 0 auto;
+    font: 20px Ubuntu;
+    color: #fff;
+  }
+
+  button{
+    color: #ffffff;
+    border: solid 2px #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 40px 0 40px 0;
+  }
+
+
+  .col-md-12{
+    margin: 82px 0 82px 0;
+    width: 100%;
+    min-height: 415px;
+    background-color: rgba(255,250,230,0);
+    border: solid 10px #fff;
+  }
+}
+
+.news{
+  min-height: 580px;
+  background: #e9edf0;
+
+
+  .col-sm-4{
+    margin: 23px 0 ;
+  }
+
+
+}
+
+.gallery{
+  max-height: 890px;
+
+
+
+  figure {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  figure img {
+    position: relative;
+    display: block;
+    height: auto;
+    opacity: 0.8;
+  }
+
+  figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  figure figcaption::before,
+  figure figcaption::after {
+    pointer-events: none;
+  }
+
+  figure figcaption,
+  figure a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Anchor will cover the whole item by default */
+  /* For some effects it will show as a button */
+  figure a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+  }
+
+  figure h2 {
+    word-spacing: -0.15em;
+
+    font-weight: 300;
+  }
+
+  figure h2 span {
+    font-weight: 800;
+  }
+
+  figure h2,
+  figure p {
+    margin: 0;
+  }
+
+  figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+  }
+
+  /* Individual effects */
+
+  /*---------------*/
+  /***** Lily *****/
+  /*---------------*/
+
+  figure.effect-lily img {
+    width: -webkit-calc(100% + 50px);
+    width: calc(100% + 50px);
+    opacity: 0.7;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-40px,0, 0);
+    transform: translate3d(-40px,0,0);
+  }
+
+  figure.effect-lily figcaption {
+    text-align: left;
+  }
+
+  figure.effect-lily h2,
+  figure.effect-lily p {
+    -webkit-transform: translate3d(0,40px,0);
+    transform: translate3d(0,40px,0);
+  }
+
+  figure.effect-lily h2 {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+  }
+
+  figure.effect-lily p {
+    color: rgba(255,255,255,0.6);
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+    transition: opacity 0.2s, transform 0.35s;
+  }
+
+  figure.effect-lily:hover img,
+  figure.effect-lily:hover p {
+    opacity: 1;
+  }
+
+  figure.effect-lily:hover img,
+  figure.effect-lily:hover h2,
+  figure.effect-lily:hover p {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+  figure.effect-lily:hover p {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+    -webkit-transition-duration: 0.35s;
+    transition-duration: 0.35s;
+  }
+
+
+
+}
+
+
+
+/*    start hover effect     */
+.ih-item.square {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  box-shadow: 10px 10px 6px -6px #777777;
+}
+
+.ih-item {
+  position: relative;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.ih-item,
+.ih-item * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ih-item a {
+  color: #6e7b82;
+}
+.ih-item a:hover {
+  text-decoration: none;
+}
+.ih-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.ih-item.square .info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.ih-item.square.effect1 {
+  overflow: hidden;
+}
+
+.ih-item.square.effect1 .img {
+  z-index: 11;
+  position: absolute;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.ih-item.square.effect1 .info {
+  background: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.ih-item.square.effect1 a:hover .info {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+
+
+.ih-item.square.effect3 {
+  overflow: hidden;
+}
+
+.ih-item.square.effect3 .img {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.ih-item.square.effect3 .info {
+  height: 65px;
+  background: #ffffff;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.ih-item.square.effect3 .info h3 {
+  text-transform: uppercase;
+  color: #6e7b82;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px 10px 0 4px;
+  margin: 4px 0 0 0;
+}
+
+.ih-item.square.effect3 a:hover .info {
+  visibility: visible;
+  opacity: 1;
+}
+
+.ih-item.square.effect3.bottom_to_top .info {
+  top: auto;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+.ih-item.square.effect3.bottom_to_top a:hover .img {
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  -o-transform: translateY(-50px);
+  transform: translateY(-50px);
+}
+.ih-item.square.effect3.bottom_to_top a:hover .info {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.ih-item.square.effect3.top_to_bottom .info {
+  bottom: auto;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.ih-item.square.effect3.top_to_bottom a:hover .img {
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  transform: translateY(50px);
+}
+.ih-item.square.effect3.top_to_bottom a:hover .info {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+
+
+.footer{
+  background: #e9edf0;
+  min-height: 165px;
+
+  p{
+    font: 14px Ubuntu;
+    text-transform: uppercase;
+    color: #868e91;
+    line-height: 165px;
+    margin: 0 10px;
+    float: left;
+  }
+
+  svg{
+    margin: 67px 0;
+  }
+}
+
+.fb{
+  fill: blue;
+}
+.gp{
+  fill: red;
+}
+.fb, .gp{
+  fill-opacity: .5;
+  margin: 50px 0 0 0;
+  &:hover{
+    fill-opacity: 1;
+  }
+}
+
+
